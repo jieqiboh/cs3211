@@ -1,0 +1,23 @@
+# Ignore all .idea directories recursively
+.idea/
+
+# Ignore all object files (.o) recursively
+*.o
+
+# Ignore temporary build files
+*.obj
+*.so
+*.a
+*.out
+
+# Ignore all compiled binary executables
+*.exe
+*.dll
+
+# Ignore CMake build directories
+build/
+cmake-build-*/
+
+# Ignore VS Code settings (optional)
+.vscode/
+

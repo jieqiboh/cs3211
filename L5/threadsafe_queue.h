@@ -12,7 +12,7 @@
 template<typename T>
 class threadsafe_queue {
 private:
-    mutable std::mutex mut;
+    mutable std::mutex m;
     std::queue<T> data_queue;
     std::condition_variable data_cond;
 public:
@@ -30,5 +30,7 @@ public:
 
     bool empty() const; // Empty check method
 };
+
+void threadsafe_queue_test();
 
 #endif //L5_THREADSAFE_QUEUE_H
